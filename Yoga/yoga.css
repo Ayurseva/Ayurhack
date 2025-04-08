@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head{
+    /* background: rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+    /* backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(1px); */
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+    padding: 20px;
+    display: grid;
+    align-items: center;
+    /* justify-content: space-between; */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    /* align-items: center; */
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.head h1{
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 25px;
+    margin-left: 10px;
+}
+ul li{
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 62px;
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+
+}
+ul  li a:hover{
+    color: orangered;
+    transition: 0.4s;
+
+}
+nav ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head li{
+    display: inline;
+}
+
+.yo{
+    background-image: url('yogaf.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.yo .head{
+    margin-top: -55px;
+    margin-left: -40px;
+    margin-right: -40px;
+}
+.yo h1{
+    align-items: center;
+    text-align: center;
+    opacity: 0.5;
+    font-size: 250px;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 5px;
+    transition: all 0.6s ease-in;
+}
+.yo h1:hover{
+    text-shadow: 1px 1px 1px black;
+    opacity: 1;
+    cursor: pointer;
+    font-size: 260px;
+}
+.yo p{
+    margin-top: 130px;
+    font-size: 20px;
+    text-align: center;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.ab{
+    display: flex;
+    margin-top: 100px;
+}
+
+.ab img{
+    border: none;
+    border-radius: 5px;
+    height: 400px;
+    width: 350px;
+    margin-right: 30px;
+    margin-left: 10px;
+}
+.ab h1{
+    margin-top: 10px;
+    font-size: 50px;
+    font-family: "Macondo", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.ab p{
+    margin-top: 20px;
+    text-align: justify;
+    margin-right: 60px;
+    letter-spacing: 1.5px;
+}
+
+.container{
+    margin-top: 50px;
+}
+.container>h1{
+    font-size: 50px;
+    font-family: "Macondo", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#pla,.know{
+    margin-left: 20px;
+    display:grid;
+    gap: 20px;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+}
+
+.know{
+    display: none;
+}
+.know.active{
+    display: grid;
+    transition: 0.4s;
+    margin-top: 20px;
+}
+.card{
+    width: 290px;
+    height: 290px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.card img{
+    width: 290px;
+    height: 290px;
+    transition: all 0.3s;
+}
+.container button,.btn2{
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition:  0.4s;
+    color: orangered;
+    font-weight: bold;
+}
+.btn.active{
+    display: none;
+}
+.btn2{
+    display: none;
+}
+.btn2.active{
+    display: block;
+
+}
+/* .btn.active .know{
+    margin-top: 50px;
+} */
+.container button:hover{
+    background-color: orangered;
+    color: white;
+}
+.content{
+    position: absolute;
+    bottom: -165px;
+    left: 10px;
+    color: #ffffff;
+    transition: all 0.3s;
+    margin-left: 10px;
+    margin-right: 20px;
+    text-align: justify;
+}
+.content h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.content p{
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.card:hover .content{
+    bottom: 10px;
+}
+.card:hover img{
+    filter: brightness(0.6);
+}
+
+.get{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(0, 191, 0, 0.388);
+    padding-bottom: 30px;
+}
+.get h1{
+    margin-top: 20px;
+    font-size: 50px;
+    font-family: "Macondo", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+.tou h3{
+    font-size: 30px;
+    font-family: "Macondo", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.tou{
+    display: flex;
+    gap:100px;
+    font-size: 20px;
+}
+.address,.phone,.em{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 200px;
+}
+
+/* ChatBot */
+
+.chat {
+    width: 350px;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-weight: lighter;
+    position: fixed;
+    right: 5px;
+    bottom: 55px;
+}
+.chat{
+    font-size: 10px;
+}
+#chat-box {
+    height: 250px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+#chat-log {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.chat h1{
+    font-family: "Macondo", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+    
+}
+.chat-message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.user-message {
+    background-color: #10bd00;
+    color: #fff;
+    text-align: right;
+}
+
+.bot-message {
+    background-color: #f1f1f1;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#user-input {
+    width: 80%;
+    height: 20px;
+    border: none;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#send-btn {
+    width: 25%;
+    border: none;
+    background-color: #10bd00;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    position:absolute;
+    right: 0;
+    bottom: 0;
+}
+.ch{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    background-color: white;
+    border-radius: 50%;
+
+}
+
+.chat.active{
+    display: grid;
+    transition: all 2s ease-in-out;
+}
+
+/* Tutorial */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    position: relative;
+}
+.carousel h1{
+    font-family: Arial;
+    font-size: 20px;
+    font-style: italic;
+}
+.arrow {
+    cursor: pointer;
+    font-size: 2rem;
+    /* background-color: #f0f0f0; */
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.arrow-left {
+    background-color: transparent;
+    left: 0;
+}
+.arrow-right {
+    background-color: transparent;
+    right: 0;
+}
+.containe {
+    width: 90%;
+    overflow: hidden;
+}
+.slider {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+.slide img {
+    width: 90%;
+    height: 350px;
+    object-fit: cover;
+}
+.caption {
+    margin-top: 30px;
+    font-weight: bold;
+}
+#Tau{
+    font-family: "Macondo", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: -20px;
+}
